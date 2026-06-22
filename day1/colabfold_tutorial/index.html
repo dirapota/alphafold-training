@@ -834,8 +834,6 @@
 </li>
 <li>
 <p>Evaluate the resulting models, confidence metrics, and plots with sequence coverage and identity in the MSA.</p>
-</li>
-</ol>
 <div class="admonition question">
 <p class="admonition-title">Questions to consider</p>
 <ul>
@@ -843,8 +841,10 @@
 <li>How do MSA depth, diversity, and coverage influence prediction confidence for this protein?</li>
 </ul>
 </div>
-<ol>
-<li>Save the results.</li>
+</li>
+<li>
+<p>Save the results.</p>
+</li>
 <li>Open the best-ranked models in Mol* and compare the structure generated with the ColabFold default MSA to the structure generated with the HHblits MSA. Superpose the models with TM-align and color them by pLDDT.</li>
 <li>Finally, check the <a href="https://alphafold.ebi.ac.uk/">AlphaFold Protein Structure Database (AFDB)</a> entry for this protein and identify which MSA strategy produced the model most similar to the one shown in the AFDB entry.</li>
 </ol>
@@ -872,8 +872,8 @@
 <li>
 <p>Once the ColabFold job finishes, evaluate the homodimer prediction and download the results.</p>
 </li>
-<li>Open Mol* and upload both the best ColabFold homodimer prediction and the AFDB monomer model. Superpose the monomer onto one chain of the complex. What do you observe?</li>
-</ol>
+<li>
+<p>Open Mol* and upload both the best ColabFold homodimer prediction and the AFDB monomer model. Superpose the monomer onto one chain of the complex. What do you observe?</p>
 <div class="admonition question">
 <p class="admonition-title">Questions to consider</p>
 <ul>
@@ -882,11 +882,19 @@
 <li>But what is the native fold for Q55DI5? And what would you do if you don't know in which oligomeric state you should model the target protein?</li>
 </ul>
 </div>
-<p>Let's get some ideas about the native fold of the target protein and perform a template search with <a href="https://swissmodel.expasy.org/">SWISS-MODEL</a>. You can use the SWISS-MODEL Repository (SMR) to find and compare available models. Go to SMR and paste <code>Q55DI5</code> in the search field.</p>
+</li>
+<li>
+<p>Go to <a href="https://swissmodel.expasy.org/repository">SWISS-MODEL Repository</a> and paste <code>Q55DI5</code> in the search field.</p>
 <p><img alt="SWISS-MODEL search" src="../../assets/images/t_10.png" /></p>
+</li>
+<li>
 <p>The results of the search show: (1) the best template found in PDB100 through a sequence search, which was used to build the SWISS-MODEL model (3); SWISS-MODEL also shows good hits found in AFDB. Chain O was the template from the found complex <strong>PDB ID: 7OKX</strong> (4).</p>
 <p><img alt="SWISS-MODEL results" src="../../assets/images/t_11.png" /></p>
+</li>
+<li>
 <p>Now superpose in Mol* the found template chain with the modeled homodimer. What can you say about that?</p>
+</li>
+</ol>
 <hr />
 <h3 id="32-bad-example-for-complex-prediction">3.2 "Bad example" for complex prediction</h3>
 <p>This exercise emphasises that AF2, like AF3, does not know the stoichiometry of the protein it models. Therefore, if we provide only a single sequence as input, AF2 will model it as a monomer (as seen in Exercise 3.1). The example below shows that a predicted monomeric fold is not always functionally meaningful, even when it has high confidence scores.</p>
