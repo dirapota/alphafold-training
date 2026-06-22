@@ -23,3 +23,16 @@
 - [A0A377W562.fasta (Exercise 3.2)](data/Exercise_3.2/A0A377W562.fasta.rtf)
 - [ColabFold results - monomer (Exercise 3.2)](data/Exercise_3.2/ColabFold_results_monomer.zip)
 - [ColabFold results - complex (Exercise 3.2)](data/Exercise_3.2/ColabFold_results_complex.zip)
+
+## Exercise 4.0
+
+- [8sc1.cif (Exercise 4.0)](data/Exercise_4.0/8sc1.cif)
+- [ColabFold results - default (Exercise 4.0)](data/Exercise_4.0/ColabFold_results_default.zip)
+
+## Exercise 4.2
+
+- [7zh0.cif (Exercise 4.2)](data/Exercise_4.2/7zh0.cif)
+- [8et6.cif (Exercise 4.2)](data/Exercise_4.2/8et6.cif)
+- [ColabFold results - template (Exercise 4.2)](data/Exercise_4.2/ColabFold results template.zip)
+- [ColabFold results - template noMSA (Exercise 4.2)](data/Exercise_4.2/ColabFold results - template noMSA.zip)
+- [ColabFold results - template smallMSA (Exercise 4.2)](data/Exercise_4.2/ColabFold results - template smallMSA.zip)
