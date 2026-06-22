@@ -80,9 +80,9 @@ In this exercise, you will compare the default ColabFold MSA against a custom MS
 
 4. Evaluate the resulting models, confidence metrics, and plots with sequence coverage and identity in the MSA.
 
-!!! question "Questions to consider"
-    - What is the difference between the ColabFold default MSA and the custom HHblits MSA used in this exercise?
-    - How do MSA depth, diversity, and coverage influence prediction confidence for this protein?
+    !!! question "Questions to consider"
+        - What is the difference between the ColabFold default MSA and the custom HHblits MSA used in this exercise?
+        - How do MSA depth, diversity, and coverage influence prediction confidence for this protein?
 
 5. Save the results.
 6. Open the best-ranked models in Mol* and compare the structure generated with the ColabFold default MSA to the structure generated with the HHblits MSA. Superpose the models with TM-align and color them by pLDDT.
@@ -113,20 +113,20 @@ In this exercise, you will examine a protein complex prediction. The aim is not 
 4. Once the ColabFold job finishes, evaluate the homodimer prediction and download the results.
 5. Open Mol* and upload both the best ColabFold homodimer prediction and the AFDB monomer model. Superpose the monomer onto one chain of the complex. What do you observe?
 
-!!! question "Questions to consider"
-    - What does the superposition tell you about the difference between the monomeric and dimeric folds?
-    - Why does the monomer appear disordered compared to the homodimer?
-    - But what is the native fold for Q55DI5? And what would you do if you don't know in which oligomeric state you should model the target protein?
+    !!! question "Questions to consider"
+        - What does the superposition tell you about the difference between the monomeric and dimeric folds?
+        - Why does the monomer appear disordered compared to the homodimer?
+        - But what is the native fold for Q55DI5? And what would you do if you don't know in which oligomeric state you should model the target protein?
 
-Let's get some ideas about the native fold of the target protein and perform a template search with [SWISS-MODEL](https://swissmodel.expasy.org/). You can use the SWISS-MODEL Repository (SMR) to find and compare available models. Go to SMR and paste `Q55DI5` in the search field.
+6. Go to [SWISS-MODEL Repository](https://swissmodel.expasy.org/repository) and paste `Q55DI5` in the search field.
 
-![SWISS-MODEL search](../assets/images/t_10.png)
+    ![SWISS-MODEL search](../assets/images/t_10.png)
 
-The results of the search show: (1) the best template found in PDB100 through a sequence search, which was used to build the SWISS-MODEL model (3); SWISS-MODEL also shows good hits found in AFDB. Chain O was the template from the found complex **PDB ID: 7OKX** (4).
+7. The results of the search show: (1) the best template found in PDB100 through a sequence search, which was used to build the SWISS-MODEL model (3); SWISS-MODEL also shows good hits found in AFDB. Chain O was the template from the found complex **PDB ID: 7OKX** (4).
 
-![SWISS-MODEL results](../assets/images/t_11.png)
+    ![SWISS-MODEL results](../assets/images/t_11.png)
 
-Now superpose in Mol* the found template chain with the modeled homodimer. What can you say about that?
+8. Now superpose in Mol\* the found template chain with the modeled homodimer. What can you say about that?
 
 ---
 
