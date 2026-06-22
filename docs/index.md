@@ -1,8 +1,7 @@
 ## Authors:
 
-* Author 1
-* Author 2
-* Author 3
+- Diana Rapota [![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0009-0004-0894-9816)
+- Rok Breznikar [![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0009-0002-5364-6879)
 
 ## License & copyright
 
@@ -12,8 +11,7 @@
 
 ## Learning outcomes
 
-* Learning outcome 1
-* Learning outcome 2
+The goal of this course is to be able to run AlphaFold2/AF3 independently and critically judge when a prediction is biologically meaningful versus potentially misleading. Students are expected to move beyond simply generating predictions and develop the ability to interpret and validate results.
 
 ## Learning experiences
 

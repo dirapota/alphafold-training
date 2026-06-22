@@ -1,7 +1,8 @@
 [project]
-site_name = "My site"
-repo_name = "sib-swiss/course_website_template"
-repo_url = "https://github.com/sib-swiss/course_website_template"
+site_name = "AlphaFold Training"
+site_url = "https://dirapota.github.io/alphafold-training/"
+repo_name = "dirapota/alphafold-training"
+repo_url = "https://github.com/dirapota/alphafold-training"
 extra_css = ["stylesheets/extra.css"]
 copyright = """
     Copyright &copy; 2021-2025 SIB Swiss Institute of Bioinformatics -
@@ -26,9 +27,8 @@ matomo = "Matomo Analytics"
 
 nav = [
     {"Home" = "index.md"},
-    {"Precourse preparations" = "precourse.md"},
     {"Course schedule" = "course_schedule.md"},
-    {"Exercises" = "exercises.md"}
+    {"Day 1" = {"Slides" = "day1/slides.md", "ColabFold tutorial" = "day1/colabfold_tutorial.md", "Mol* tutorial" = "day1/mol_star_tutorial.md"}}
 ]
 
 [project.theme]
