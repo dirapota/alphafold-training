@@ -8,36 +8,30 @@
       
       
       
-        <link rel="canonical" href="https://dirapota.github.io/alphafold-training/0.1/day1/colabfold_tutorial/">
       
-      
-        <link rel="prev" href="../../course_schedule/">
-      
-      
-        <link rel="next" href="../mol_star_tutorial/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/SIB_logo.svg">
+      <link rel="icon" href="/alphafold-training/assets/images/SIB_logo.svg">
       <meta name="generator" content="zensical-0.0.46">
     
     
       
-        <title>ColabFold Tutorial - AlphaFold Training</title>
+        <title>AlphaFold Training</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.19d3147f.min.css">
+      <link rel="stylesheet" href="/alphafold-training/assets/stylesheets/modern/main.19d3147f.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="/alphafold-training/assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
 
@@ -56,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="/alphafold-training/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("/alphafold-training",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -82,8 +76,7 @@
     <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#colabfold-tutorial" class="md-skip">
+        <a href="#__skip" class="md-skip">
           Skip to content
         </a>
       
@@ -103,9 +96,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="AlphaFold Training" class="md-header__button md-logo" aria-label="AlphaFold Training" data-md-component="logo">
+    <a href="/alphafold-training/" title="AlphaFold Training" class="md-header__button md-logo" aria-label="AlphaFold Training" data-md-component="logo">
       
-  <img src="../../assets/images/SIB_logo.svg" alt="AlphaFold Training">
+  <img src="/alphafold-training/assets/images/SIB_logo.svg" alt="AlphaFold Training">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
@@ -122,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ColabFold Tutorial
+              
             
           </span>
         </div>
@@ -211,9 +204,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="AlphaFold Training" class="md-nav__button md-logo" aria-label="AlphaFold Training" data-md-component="logo">
+    <a href="/alphafold-training/" title="AlphaFold Training" class="md-nav__button md-logo" aria-label="AlphaFold Training" data-md-component="logo">
       
-  <img src="../../assets/images/SIB_logo.svg" alt="AlphaFold Training">
+  <img src="/alphafold-training/assets/images/SIB_logo.svg" alt="AlphaFold Training">
 
     </a>
     AlphaFold Training
@@ -240,7 +233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="/alphafold-training/" class="md-nav__link">
         
   
   
@@ -266,7 +259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../course_schedule/" class="md-nav__link">
+      <a href="/alphafold-training/course_schedule/" class="md-nav__link">
         
   
   
@@ -289,20 +282,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -322,7 +313,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -336,19 +327,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="/alphafold-training/day1/colabfold_tutorial/" class="md-nav__link">
         
   
   
@@ -363,7 +345,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -376,7 +357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mol_star_tutorial/" class="md-nav__link">
+      <a href="/alphafold-training/day1/mol_star_tutorial/" class="md-nav__link">
         
   
   
@@ -403,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slides/" class="md-nav__link">
+      <a href="/alphafold-training/day1/slides/" class="md-nav__link">
         
   
   
@@ -444,8 +425,6 @@
                     
                     
                     
-                      
-                    
                     
                   
                   <div class="md-sidebar__inner">
@@ -455,8 +434,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
-  
-    
   
   
 </nav>
@@ -470,27 +447,8 @@
               
               <article class="md-content__inner md-typeset">
                 
-                  
-  
-  
+  <h1>404 - Not found</h1>
 
-
-<h1 id="colabfold-tutorial">ColabFold Tutorial</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
               </article>
             </div>
           
@@ -631,12 +589,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":[],"search":"../../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"/alphafold-training","features":[],"search":"/alphafold-training/assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ee611ef6.min.js"></script>
+      <script src="/alphafold-training/assets/javascripts/bundle.ee611ef6.min.js"></script>
       
-        <script src="../../javascripts/consent.js"></script>
+        <script src="/alphafold-training/javascripts/consent.js"></script>
       
     
   </body>
