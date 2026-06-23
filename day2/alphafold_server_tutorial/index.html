@@ -561,7 +561,7 @@
   <a href="#exercise-1-modeling-of-calmodulin-with-and-without-ca2-ions" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Exercise 1: Modeling of Calmodulin with and without Ca²⁺ Ions
+        Exercise 1: Modeling of Calmodulin With and Without Ca²⁺ Ions
       </span>
     </span>
   </a>
@@ -677,7 +677,7 @@
   <a href="#exercise-1-modeling-of-calmodulin-with-and-without-ca2-ions" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Exercise 1: Modeling of Calmodulin with and without Ca²⁺ Ions
+        Exercise 1: Modeling of Calmodulin With and Without Ca²⁺ Ions
       </span>
     </span>
   </a>
@@ -726,23 +726,37 @@
 
 <h1 id="alphafold-server-tutorial-boltz-2">AlphaFold Server Tutorial + Boltz-2</h1>
 <hr />
-<h2 id="exercise-1-modeling-of-calmodulin-with-and-without-ca2-ions">Exercise 1: Modeling of Calmodulin with and without Ca²⁺ Ions</h2>
+<h2 id="exercise-1-modeling-of-calmodulin-with-and-without-ca2-ions">Exercise 1: Modeling of Calmodulin With and Without Ca²⁺ Ions</h2>
 <p>Upon Ca²⁺ binding, calmodulin undergoes conformational rearrangements. In this exercise, we want to model calmodulin in the apo conformation (without Ca²⁺ ions) and the Ca²⁺-bound conformation.</p>
 <p><strong>Target:</strong> Calmodulin from <em>H. sapiens</em> (UniProt ID: <a href="https://www.uniprot.org/uniprotkb/P0DP23">P0DP23</a>)</p>
 <p><strong>Input sequence:</strong> Copy the sequence from UniProt: <a href="https://www.uniprot.org/uniprotkb/P0DP23">P0DP23</a></p>
 <ol>
-<li>First, model calmodulin in the <strong>apo conformation</strong>. Go to <a href="https://alphafoldserver.com/">AlphaFold Server</a>, select <strong>Protein</strong> as the Entity type, keep <strong>Copies</strong> as 1 (monomer) and insert the calmodulin sequence into the sequence field. Press <strong>Continue</strong> and preview the job.
-  AlphaFold Server - input sequence</li>
-<li>In the window, rename the Job name as "calmodulin" and press <strong>Confirm and submit job</strong>.
-  AlphaFold Server - submit job</li>
-<li>Model calmodulin in complex with <strong>4 Ca²⁺ ions</strong>. Press <strong>+ Add entity</strong> → Entity type <strong>"Ion"</strong> → Copies set to <strong>4</strong> and in the window select <strong>Ca²⁺</strong>.
-  AlphaFold Server - add Ca2+ ions</li>
-<li>Click on the jobs and evaluate the results.
-  AlphaFold Server - results</li>
-<li>Download the models.
-  AlphaFold Server - download</li>
-<li>Now compare the apo and Ca²⁺-bound conformations in Mol. Upload the best model for each run and superpose them with TM-align. Do you see any differences?</li>
-<li>Now confirm to which state (apo or Ca²⁺-bound) the resulting models correspond. Upload the apo (PDB ID: <code>1CFD</code>) and Ca²⁺-bound (PDB ID: <code>1CLL</code>) crystal structures of calmodulin from the PDB, and answer this question using TM-align.</li>
+<li>
+<p>First, model calmodulin in the <strong>apo conformation</strong>. Go to <a href="https://alphafoldserver.com/">AlphaFold Server</a>, select <strong>Protein</strong> as the Entity type, keep <strong>Copies</strong> as 1 (monomer) and insert the calmodulin sequence into the sequence field. Press <strong>Continue</strong> and preview the job.</p>
+<p><img alt="AlphaFold Server - input sequence" src="../../assets/images/Picture25.png" /></p>
+</li>
+<li>
+<p>In the window, rename the Job name as "calmodulin" and press <strong>Confirm and submit job</strong>.</p>
+<p><img alt="AlphaFold Server - submit job" src="../../assets/images/Picture23.png" /></p>
+</li>
+<li>
+<p>Model calmodulin in complex with <strong>4 Ca²⁺ ions</strong>. Press <strong>+ Add entity</strong> → Entity type <strong>"Ion"</strong> → Copies set to <strong>4</strong> and in the window select <strong>Ca²⁺</strong>.</p>
+<p><img alt="AlphaFold Server - add Ca2+ ions" src="../../assets/images/Picture22.png" /></p>
+</li>
+<li>
+<p>Click on the jobs and evaluate the results.</p>
+<p><img alt="AlphaFold Server - results" src="../../assets/images/Picture26.png" /></p>
+</li>
+<li>
+<p>Download the models.</p>
+<p><img alt="AlphaFold Server - download" src="../../assets/images/Picture24.png" /></p>
+</li>
+<li>
+<p>Now compare the apo and Ca²⁺-bound conformations in Mol*. Upload the best model for each run and superpose them with TM-align. Do you see any differences?</p>
+</li>
+<li>
+<p>Now confirm to which state (apo or Ca²⁺-bound) the resulting models correspond. Upload the apo (PDB ID: <code>1CFD</code>) and Ca²⁺-bound (PDB ID: <code>1CLL</code>) crystal structures of calmodulin from the PDB, and answer this question using TM-align.</p>
+</li>
 </ol>
 <hr />
 <h2 id="exercise-2-protein-ligand-complex-with-boltz-2">Exercise 2: Protein-ligand complex with Boltz-2</h2>
@@ -754,22 +768,30 @@
 <p>Unfortunately, AlphaFold Server (the online implementation of AlphaFold3) does not support arbitrary SMILES input and only allows a very limited set of CCD ligands. To try out specifying a ligand with a SMILES string, we can use one of the online implementations of AlphaFold3-like models, such as <a href="https://boltz.bio/">Boltz</a>, <a href="https://www.chaidiscovery.com/">Chai-1</a>, and others.</p>
 <p>We will use <strong>Boltz-2</strong> via <a href="https://neurosnap.ai/">Neurosnap</a>. Using it requires a free account (you get ~2 free predictions).</p>
 <p><strong>Target:</strong> Since we are having this course in Basel, we can model the binding of <strong>LSD to the 5-HT2A receptor</strong> (a serotonin receptor). LSD was first synthesized by Albert Hofmann in Basel, where he also famously discovered its effects.</p>
-<p><strong>Experimental structure:</strong> PDB <code>[7WC6](https://www.rcsb.org/structure/7WC6)</code></p>
-<p><strong>Protein sequence:</strong> The FASTA file can be found in the Data section (Exercise 2).</p>
+<p><strong>Experimental structure:</strong> PDB <a href="https://www.rcsb.org/structure/7WC6"><code>7WC6</code></a></p>
+<p><strong>Protein sequence:</strong> The FASTA file can be found in the <a href="../data/">Data</a> section (Exercise 2).</p>
 <p><strong>Ligand SMILES string:</strong> <code>CCN(CC)C(=O)C1CN(C2Cc3c[nH]c4c3c(ccc4)C2=C1)C</code></p>
 <ol>
-<li>Open <a href="https://neurosnap.ai/">Neurosnap</a> and make an account. You will get a confirmation email (also check your spam folder). Once activated, find <strong>Boltz-2</strong> on the service (or open it <a href="https://neurosnap.ai/service/Boltz2">directly</a>). Give the job a name in the <strong>Job Note</strong> section.
-  Neurosnap - job name</li>
-<li>Get the protein sequence from the FASTA file, open the <strong>Input Sequences</strong> section and paste the protein sequence. Make sure the sequence is added before closing the window.
-  Input sequence - step 1
-    Input sequence - step 2
-    Input sequence - step 3</li>
-<li>Copy the SMILES string of the ligand. Open the <strong>Input Molecules</strong> section, click on <strong>Enter SMILES or CCD codes</strong> and paste the SMILES string. Make sure the molecule is added before closing the window.
-  Input ligand - step 1
-    Input ligand - step 2
-    Input ligand - step 3</li>
-<li>Click <strong>Run Job</strong> at the bottom of the page.
-  Run job</li>
+<li>
+<p>Open <a href="https://neurosnap.ai/">Neurosnap</a> and make an account. You will get a confirmation email (also check your spam folder). Once activated, find <strong>Boltz-2</strong> on the service (or open it <a href="https://neurosnap.ai/service/Boltz2">directly</a>). Give the job a name in the <strong>Job Note</strong> section.</p>
+<p><img alt="Neurosnap - job name" src="../../assets/images/1_jobname.png" /></p>
+</li>
+<li>
+<p>Get the protein sequence from the FASTA file, open the <strong>Input Sequences</strong> section and paste the protein sequence. Make sure the sequence is added before closing the window.</p>
+<p><img alt="Input sequence - step 1" src="../../assets/images/2_input_seq1.png" /></p>
+<p><img alt="Input sequence - step 2" src="../../assets/images/2_input_seq2.png" /></p>
+<p><img alt="Input sequence - step 3" src="../../assets/images/2_input_seq3.png" /></p>
+</li>
+<li>
+<p>Copy the SMILES string of the ligand. Open the <strong>Input Molecules</strong> section, click on <strong>Enter SMILES or CCD codes</strong> and paste the SMILES string. Make sure the molecule is added before closing the window.</p>
+<p><img alt="Input ligand - step 1" src="../../assets/images/3_input_lig1.png" /></p>
+<p><img alt="Input ligand - step 2" src="../../assets/images/3_input_lig2.png" /></p>
+<p><img alt="Input ligand - step 3" src="../../assets/images/3_input_lig3.png" /></p>
+</li>
+<li>
+<p>Click <strong>Run Job</strong> at the bottom of the page.</p>
+<p><img alt="Run job" src="../../assets/images/4_run.png" /></p>
+</li>
 </ol>
 <hr />
 <h2 id="exercise-3-predict-your-favorite-protein">Exercise 3: Predict your favorite protein</h2>
