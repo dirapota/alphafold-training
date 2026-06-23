@@ -17,6 +17,10 @@ Course for the SIB AlphaFold training, covering protein structure prediction wit
   - Mol\* tutorial (structure visualization and analysis)
   - Slides
 
+- **Day 2**
+  - AlphaFold Server tutorial (apo vs Ca²⁺-bound calmodulin, protein-ligand complex with Boltz-2)
+  - Predict your favorite protein (bonus exercise)
+
 ## License
 
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) — SIB Swiss Institute of Bioinformatics
