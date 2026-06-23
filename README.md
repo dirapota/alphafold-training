@@ -18,8 +18,8 @@ Course for the SIB AlphaFold training, covering protein structure prediction wit
   - Slides
 
 - **Day 2**
-  - AlphaFold Server tutorial (apo vs Ca²⁺-bound calmodulin, protein-ligand complex with Boltz-2)
-  - Predict your favorite protein (bonus exercise)
+  - AlphaFold Server tutorial and Boltz-2 (apo vs Ca²⁺-bound calmodulin, protein-ligand complex with Boltz-2)
+  - Slides
 
 ## License
 

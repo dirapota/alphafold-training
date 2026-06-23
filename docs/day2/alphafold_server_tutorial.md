@@ -2,7 +2,7 @@
 
 ---
 
-## Exercise 1: Modeling of Calmodulin with and without Ca²⁺ Ions
+## Exercise 1: Modeling of Calmodulin With and Without Ca²⁺ Ions
 
 Upon Ca²⁺ binding, calmodulin undergoes conformational rearrangements. In this exercise, we want to model calmodulin in the apo conformation (without Ca²⁺ ions) and the Ca²⁺-bound conformation.
 
@@ -11,16 +11,27 @@ Upon Ca²⁺ binding, calmodulin undergoes conformational rearrangements. In thi
 **Input sequence:** Copy the sequence from UniProt: [P0DP23](https://www.uniprot.org/uniprotkb/P0DP23)
 
 1. First, model calmodulin in the **apo conformation**. Go to [AlphaFold Server](https://alphafoldserver.com/), select **Protein** as the Entity type, keep **Copies** as 1 (monomer) and insert the calmodulin sequence into the sequence field. Press **Continue** and preview the job.
-  AlphaFold Server - input sequence
+
+    ![AlphaFold Server - input sequence](../assets/images/Picture25.png)
+
 2. In the window, rename the Job name as "calmodulin" and press **Confirm and submit job**.
-  AlphaFold Server - submit job
+
+    ![AlphaFold Server - submit job](../assets/images/Picture23.png)
+
 3. Model calmodulin in complex with **4 Ca²⁺ ions**. Press **+ Add entity** → Entity type **"Ion"** → Copies set to **4** and in the window select **Ca²⁺**.
-  AlphaFold Server - add Ca2+ ions
+
+    ![AlphaFold Server - add Ca2+ ions](../assets/images/Picture22.png)
+
 4. Click on the jobs and evaluate the results.
-  AlphaFold Server - results
+
+    ![AlphaFold Server - results](../assets/images/Picture26.png)
+
 5. Download the models.
-  AlphaFold Server - download
-6. Now compare the apo and Ca²⁺-bound conformations in Mol. Upload the best model for each run and superpose them with TM-align. Do you see any differences?
+
+    ![AlphaFold Server - download](../assets/images/Picture24.png)
+
+6. Now compare the apo and Ca²⁺-bound conformations in Mol\*. Upload the best model for each run and superpose them with TM-align. Do you see any differences?
+
 7. Now confirm to which state (apo or Ca²⁺-bound) the resulting models correspond. Upload the apo (PDB ID: `1CFD`) and Ca²⁺-bound (PDB ID: `1CLL`) crystal structures of calmodulin from the PDB, and answer this question using TM-align.
 
 ---
@@ -38,24 +49,35 @@ We will use **Boltz-2** via [Neurosnap](https://neurosnap.ai/). Using it require
 
 **Target:** Since we are having this course in Basel, we can model the binding of **LSD to the 5-HT2A receptor** (a serotonin receptor). LSD was first synthesized by Albert Hofmann in Basel, where he also famously discovered its effects.
 
-**Experimental structure:** PDB `[7WC6](https://www.rcsb.org/structure/7WC6)`
+**Experimental structure:** PDB [`7WC6`](https://www.rcsb.org/structure/7WC6)
 
-**Protein sequence:** The FASTA file can be found in the Data section (Exercise 2).
+**Protein sequence:** The FASTA file can be found in the [Data](data.md) section (Exercise 2).
 
 **Ligand SMILES string:** `CCN(CC)C(=O)C1CN(C2Cc3c[nH]c4c3c(ccc4)C2=C1)C`
 
 1. Open [Neurosnap](https://neurosnap.ai/) and make an account. You will get a confirmation email (also check your spam folder). Once activated, find **Boltz-2** on the service (or open it [directly](https://neurosnap.ai/service/Boltz2)). Give the job a name in the **Job Note** section.
-  Neurosnap - job name
+
+    ![Neurosnap - job name](../assets/images/1_jobname.png)
+
 2. Get the protein sequence from the FASTA file, open the **Input Sequences** section and paste the protein sequence. Make sure the sequence is added before closing the window.
-  Input sequence - step 1
-    Input sequence - step 2
-    Input sequence - step 3
+
+    ![Input sequence - step 1](../assets/images/2_input_seq1.png)
+
+    ![Input sequence - step 2](../assets/images/2_input_seq2.png)
+
+    ![Input sequence - step 3](../assets/images/2_input_seq3.png)
+
 3. Copy the SMILES string of the ligand. Open the **Input Molecules** section, click on **Enter SMILES or CCD codes** and paste the SMILES string. Make sure the molecule is added before closing the window.
-  Input ligand - step 1
-    Input ligand - step 2
-    Input ligand - step 3
+
+    ![Input ligand - step 1](../assets/images/3_input_lig1.png)
+
+    ![Input ligand - step 2](../assets/images/3_input_lig2.png)
+
+    ![Input ligand - step 3](../assets/images/3_input_lig3.png)
+
 4. Click **Run Job** at the bottom of the page.
-  Run job
+
+    ![Run job](../assets/images/4_run.png)
 
 ---
 
@@ -74,4 +96,3 @@ In this exercise, you can model a protein or protein complex of your own choice 
     - Use [SWISS-MODEL Repository](https://swissmodel.expasy.org/repository) for a sequence search for templates in PDB
     - Or/And generate a prediction for one or more chains and use it as a template (if prediction is confident) for a structural search using [Foldseek](https://search.foldseek.com/)
     - After gaining some information, proceed to the AlphaFold Server submission above
-
