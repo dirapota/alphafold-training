@@ -55,7 +55,7 @@ We will use **Boltz-2** via [Neurosnap](https://neurosnap.ai/). Using it require
 
 **Ligand SMILES string:** `CCN(CC)C(=O)C1CN(C2Cc3c[nH]c4c3c(ccc4)C2=C1)C`
 
-1. Open [Neurosnap](https://neurosnap.ai/) and make an account. You will get a confirmation email (also check your spam folder). Once activated, find **Boltz-2** on the service (or open it [directly](https://neurosnap.ai/service/Boltz2)). Give the job a name in the **Job Note** section.
+1. Open [Neurosnap](https://neurosnap.ai/) and make an account. You will get a confirmation email (also check your spam folder). Once activated, find **Boltz-2** on the service (or open it [directly](https://neurosnap.ai/service/Boltz-2%20(AlphaFold3))). Give the job a name in the **Job Note** section.
 
     ![Neurosnap - job name](../assets/images/1_jobname.png)
 
