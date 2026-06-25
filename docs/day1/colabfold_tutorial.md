@@ -172,7 +172,7 @@ During their normal function, transporters like OCT1 go through a series of conf
 
 The structure files are available in the [Data](data.md) section (Exercise 4.0).
 
-1. Open OCT1 on UniProt and copy the amino acid sequence.
+1. Open [OCT1 on UniProt](https://www.uniprot.org/uniprotkb/O15245/entry) and copy the amino acid sequence.
 2. Run ColabFold with the sequence you just copied.
 3. Download the ground truth (experimental) structures in mmCIF or PDB format for both the inward-open state (8SC1) and outward-open state (8ET6).
 4. Compare the structure you get from AlphaFold to both of them (RMSD). To which one is it closer?

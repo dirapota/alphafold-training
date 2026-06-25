@@ -89,7 +89,7 @@ In this exercise, you can model a protein or protein complex of your own choice 
     In case you don't have a target in mind, team up with someone who does!
 
 - If you know the complex you want to model (including PTMs, ligands, DNA/RNA, etc.), submit the job on the [AlphaFold Server](https://alphafoldserver.com/) and analyze the resulting metrics. You can also use:
-    - [LIVIA](https://livia.cs.tu-dortmund.de/) for additional scores (ipSAE, cLIS, etc.) and analysis of all models
+    - [LIVIA](https://flyark.github.io/LIVIA/universal.html) for additional scores (ipSAE, cLIS, etc.) and analysis of all models
     - [PAE Viewer](https://pae-viewer.uni-goettingen.de) for an interactive PAE matrix
 
 - If you do **not** know the interacting partners (proteins, ligands, DNA/RNA, peptides), you can:
