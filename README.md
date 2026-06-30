@@ -10,7 +10,12 @@ This two-day, hands-on course introduces protein structure prediction with Alpha
 - Rok Breznikar [![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0009-0002-5364-6879)
 - Janani (Jay) Durairaj [![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-1698-4556)
 
-## Course content
+## Content
+
+- Lecture slides (PDF) for every session
+- Practical tutorial with solutions, input and output data
+
+## Topics covered
 
 - **Day 1 — AlphaFold2 and ColabFold**
   - Introduction to protein structure and the principles underlying AlphaFold2
@@ -28,6 +33,24 @@ This two-day, hands-on course introduces protein structure prediction with Alpha
   - Modeling protein–ligand complexes with Boltz-2 (an AF3-class model) using SMILES inputs
   - Complementary tools: LIVIA and PAE Viewer for advanced analysis
   - A look towards alternative structure prediction methods: ESMFold2 and BioEmu
+
+## Learning outcomes
+
+By the end of this course, participants will be able to:
+
+- Run AlphaFold2 predictions independently using ColabFold, including advanced options such as custom MSAs, multimer mode, and conformation sampling
+- Use the AlphaFold Server to model diverse molecular assemblies (proteins, small molecules, metal ions)
+- Interpret confidence metrics and critically assess whether a prediction is biologically meaningful
+- Validate predicted models against experimental data and structural databases
+- Apply complementary tools (Mol*, Foldseek, SWISS-MODEL) as part of a complete structure prediction workflow
+
+## Format
+
+Lectures, hands-on computational tutorials, and group discussion. No GPU or local installation required. All exercises run in Google Colab and publicly accessible web servers.
+
+## Target audience
+
+Life scientists with a basic background in molecular biology or biochemistry who want to incorporate deep learning-based protein structure prediction into their research. Prior programming experience is not required.
 
 ## License
 
