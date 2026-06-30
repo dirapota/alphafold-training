@@ -928,6 +928,7 @@
 <p>Google Colab typically allows only one active notebook at a time. Terminate any other Colab sessions before starting ColabFold. If you continue to have problems, or if Colab disconnects during the prediction, go to the "Runtime" menu, select "Disconnect and delete runtime," then click "Run all" to restart the process.</p>
 </div>
 <p><img alt="Colab disconnect" src="../../assets/images/t_3.png" /></p>
+<p><em>Web-based ColabFold-AF2 notebook. The figure from Kim et al., (2024).</em></p>
 <div class="admonition question">
 <p class="admonition-title">Questions to consider</p>
 <ul>
@@ -940,6 +941,12 @@
 <hr />
 <h2 id="exercise-2-default-versus-custom-msa">Exercise 2: Default versus custom MSA</h2>
 <p>In this exercise, you will compare the default ColabFold MSA against a custom MSA that you provide yourself. The goal is to understand how sequence depth and sequence diversity can affect structural confidence and model quality.</p>
+<div style="display: flex; gap: 1rem; align-items: flex-start;">
+  <img src="../../../assets/images/ex2_default_msa.gif" alt="AF2 model with ColabFold default MSA (pLDDT 45.3)" style="width: 50%; height: 300px; object-fit: contain;">
+  <img src="../../../assets/images/ex2_custom_msa.gif" alt="AF2 model with custom HHblits MSA (pLDDT 89.2)" style="width: 50%; height: 300px; object-fit: contain;">
+</div>
+
+<p><em>The AF2 model generated with the ColabFold default MSA is shown on the left (pLDDT 45.3), and the model generated with a custom HHblits MSA is shown on the right (pLDDT 89.2).</em></p>
 <p><strong>Target:</strong> Predicted viral protein (UniProt ID: <a href="https://www.uniprot.org/uniprotkb/G9B1X0">G9B1X0</a>)</p>
 <p><strong>Input sequence:</strong> The FASTA file can be found in the <a href="../data/">Data</a> section (Exercise 2), or you can copy it directly from UniProt.</p>
 <ol>
@@ -981,10 +988,16 @@
 <li>Open the best-ranked models in Mol* and compare the structure generated with the ColabFold default MSA to the structure generated with the HHblits MSA. Superpose the models with TM-align and color them by pLDDT.</li>
 <li>Finally, check the <a href="https://alphafold.ebi.ac.uk/">AlphaFold Protein Structure Database (AFDB)</a> entry for this protein and identify which MSA strategy produced the model most similar to the one shown in the AFDB entry.</li>
 </ol>
+<div class="admonition warning">
+<p class="admonition-title">Spoiler alert!</p>
+<p>When comparing the sequence coverage plots for the default and custom MSAs, it is clear that the custom MSAs contain much more diverse sequences. This diversity was crucial for building a confident model of the target protein. The default MMseqs2-based MSA generation in ColabFold is fast, but it is sometimes not sensitive enough for difficult targets such as viral proteins. For highly evolved proteins or proteins with few homologs in the sequence database, and when the prediction with the default MSAs is not confident, it is recommended to generate a custom MSA for AlphaFold prediction using more sensitive sequence-search tools such as HHblits. For rare proteins, environmental sequence databases may also be more beneficial, as they can contain homologs that are absent from curated databases like UniRef, which are biased toward model organisms.</p>
+</div>
 <hr />
 <h2 id="exercise-3-multimer-prediction">Exercise 3: Multimer prediction</h2>
 <p>In this exercise, you will examine a protein complex prediction. The aim is not only to run ColabFold multimer mode, but also to evaluate whether the predicted interface is likely to be real.</p>
 <h3 id="31-good-example-for-complex-prediction">3.1 "Good example" for complex prediction</h3>
+<p><img alt="AF2 monomer and homodimer models" src="../../assets/images/complex_1.png" /></p>
+<p><em>AF2 models generated with ColabFold in which the target protein was modelled as a monomer (A) and as a homodimer (B).</em></p>
 <p><strong>Target:</strong> Transcription elongation factor Eaf N-terminal domain-containing protein from <em>Dictyostelium discoideum</em> (UniProt ID: <a href="https://www.uniprot.org/uniprotkb/Q55DI5">Q55DI5</a>)</p>
 <p><strong>Input sequences:</strong> The FASTA file can be found in the <a href="../data/">Data</a> section (Exercise 3.1).</p>
 <ol>
@@ -1012,8 +1025,15 @@
 <ul>
 <li>What does the superposition tell you about the difference between the monomeric and dimeric folds?</li>
 <li>Why does the monomer appear disordered compared to the homodimer?</li>
-<li>But what is the native fold for Q55DI5? And what would you do if you don't know in which oligomeric state you should model the target protein?</li>
 </ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Spoiler alert!</p>
+<p>As you can see for Q55DI5, the monomer has a lower average pLDDT and longer disordered regions, but the homodimer prediction reveals that the two chains intertwine, each contributing half a domain to form a stable fold. Therefore, to make a reliable prediction the domain requires the partner chain to fold correctly.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Questions to consider</p>
+<p>But what is the native fold for Q55DI5? And what would you do if you don't know in which oligomeric state you should model the target protein?</p>
 </div>
 </li>
 <li>
@@ -1028,9 +1048,15 @@
 <p>Now superpose in Mol* the found template chain with the modeled homodimer. What can you say about that?</p>
 </li>
 </ol>
+<div class="admonition warning">
+<p class="admonition-title">Spoiler alert!</p>
+<p>Based on the found model, the target protein probably exists in a complex with other proteins, and the AF2 model for the homodimer is closer to the native fold than the monomer model.</p>
+</div>
 <hr />
 <h3 id="32-bad-example-for-complex-prediction">3.2 "Bad example" for complex prediction</h3>
 <p>This exercise emphasises that AF2, like AF3, does not know the stoichiometry of the protein it models. Therefore, if we provide only a single sequence as input, AF2 will model it as a monomer (as seen in Exercise 3.1). The example below shows that a predicted monomeric fold is not always functionally meaningful, even when it has high confidence scores.</p>
+<p><img alt="AF2 monomer, PDB trimer, and AF2 homotrimer models" src="../../assets/images/complex_2.png" /></p>
+<p><em>A. AF2 model of the target protein as a monomer; B. PDB structure of a homologous obligate trimeric protein from the E. coli Type VI secretion system; C. AF2 model of the target protein as a homotrimer. The figure is adapted from Durairaj et al. (2023).</em></p>
 <p><strong>Target:</strong> Type IV secretion protein Rhs from <em>K. pneumoniae</em> (UniProt ID: <a href="https://www.uniprot.org/uniprotkb/A0A377W562">A0A377W562</a>)</p>
 <p><strong>Input sequence:</strong> The FASTA file can be found in the <a href="../data/">Data</a> section (Exercise 3.2).</p>
 <ol>
@@ -1061,6 +1087,11 @@
 <li>Do the confidence scores alone tell you whether the monomeric fold is biologically meaningful?</li>
 <li>What conclusions can you draw from this exercise?</li>
 </ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Spoiler alert!</p>
+<p>AF2 does not model all conditions required for folding, such as the presence of binding partners. In this example, we used Foldseek to identify a homologous protein with a resolved experimental structure in order to infer the native oligomeric state of the target protein. The best hit identified by Foldseek is an obligate trimer, so the monomeric model obtained by ColabFold is unlikely to represent the native state, despite its very high confidence score. The AlphaFold-Multimer model of A0A377W562 as a trimer has very low r.m.s.d. to the PDB structure, which provides additional evidence for a trimeric oligomeric state of the target protein.</p>
+<p>Ideally, this conclusion would be supported by low confidence scores for the monomer, as in Exercise 3.1, but that is not the case here. This may be explained by AF2 memorization, meaning that the model may have seen a related chain in a trimeric context during training, but we cannot say this for certain. See also the <a href="https://www.ebi.ac.uk/training/online/courses/alphafold/inputs-and-outputs/evaluating-alphafolds-predicted-structures-using-confidence-scores/plddt-understanding-local-confidence/">4E-binding protein 2 example</a> for a related case of AlphaFold memorization.</p>
 </div>
 <hr />
 <h2 id="exercise-40-alternative-conformations">Exercise 4.0: Alternative conformations</h2>
