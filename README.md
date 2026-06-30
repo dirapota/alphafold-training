@@ -52,6 +52,7 @@ Lectures, hands-on computational tutorials, and group discussion. No GPU or loca
 
 Life scientists with a basic background in molecular biology or biochemistry who want to incorporate deep learning-based protein structure prediction into their research. Prior programming experience is not required.
 
-## License
+## License & copyright
 
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) — SIB Swiss Institute of Bioinformatics
+- **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- **Copyright:** [SIB Swiss Institute of Bioinformatics](https://www.sib.swiss/)

@@ -34,6 +34,9 @@ Upon Ca²⁺ binding, calmodulin undergoes conformational rearrangements. In thi
 
 7. Now confirm to which state (apo or Ca²⁺-bound) the resulting models correspond. Upload the apo (PDB ID: `1CFD`) and Ca²⁺-bound (PDB ID: `1CLL`) crystal structures of calmodulin from the PDB, and answer this question using TM-align.
 
+!!! warning "Spoiler alert!"
+    This exercise shows that AF3, as AF2, still cannot model protein conformations.
+
 ---
 
 ## Exercise 2: Protein-ligand complex with Boltz-2
