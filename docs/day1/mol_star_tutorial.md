@@ -24,8 +24,11 @@
 
 ## Toggle Menu
 
-![Mol* Interface](../assets/images/p2.png)
-Mol* has two modes that change the behavior of a click. Switch between them using the **Selection Mode icon** (shaped like a cursor) in the Toggle Menu.
+<div style="text-align: center; margin-bottom: 1rem;">
+  <img src="../assets/images/p2.png" alt="Mol* Interface" style="width: 80%;">
+</div>
+
+Mol\* has two modes that change the behavior of a click. Switch between them using the **Selection Mode icon** (shaped like a cursor) in the Toggle Menu.
 
 **Default Mode:** A click on a residue focuses on it. The focused residue and its surroundings are displayed in ball & stick representation with all local non-covalent interactions shown. Click again to hide surroundings.
 
@@ -80,7 +83,9 @@ Go to the Home main menu. Options include:
 - **Download from PDB** — paste a PDB ID
 - **Open Files** — upload from your laptop
 
-![Mol* Interface](../assets/images/p4.png){ width="70%" }
+<div style="text-align: center;">
+  <img src="../assets/images/p4.png" alt="Mol* Interface" style="width: 70%;">
+</div>
 
 ---
 

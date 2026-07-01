@@ -16,11 +16,6 @@
 
 This two-day, hands-on course introduces protein structure prediction with AlphaFold2 and AlphaFold3. Although AlphaFold2 has made structure prediction routine, assessing when a prediction is reliable still requires practice. Participants will learn how to run predictions, interpret and validate results, and critically evaluate model quality. The course combines lectures with practical tutorials.
 
-## Content
-
-- Lecture slides (PDF) for every session
-- Practical tutorial with solutions, input and output data
-
 ## Topics Covered
 
 **Day 1: AlphaFold2 and ColabFold**
@@ -41,6 +36,12 @@ This two-day, hands-on course introduces protein structure prediction with Alpha
 - Modeling protein–ligand complexes with Boltz-2 (an AF3-class model) using SMILES inputs
 - Complementary tools: LIVIA and PAE Viewer for advanced analysis
 - A look towards alternative structure prediction methods: ESMFold2 and BioEmu
+
+## Content
+
+- Lecture slides (PDF) for every session: [Slides Day 1](day1/slides.md), [Slides Day 2](day2/slides.md)
+- Practical tutorial with solutions: [ColabFold tutorial](day1/colabfold_tutorial.md), [AlphaFold Server + Boltz-2 tutorial](day2/alphafold_server_tutorial.md)
+- Input and output data: [Data Day 1](day1/data.md), [Data Day 2](day2/data.md)
 
 ## Learning outcomes
 

@@ -28,11 +28,6 @@ matomo = "Matomo Analytics"
 nav = [
     {"Home" = "index.md"},
     {"Course schedule" = "course_schedule.md"},
-    {"Day 2" = [
-        {"Slides" = "day2/slides.md"},
-        {"AlphaFold Server tutorial" = "day2/alphafold_server_tutorial.md"},
-        {"Data" = "day2/data.md"}
-    ]},
     {"Day 1" = [
         {"Slides" = "day1/slides.md"},
         {"ColabFold tutorial" = [
@@ -40,6 +35,11 @@ nav = [
             {"Data" = "day1/data.md"}
         ]},
         {"Mol* tutorial" = "day1/mol_star_tutorial.md"}
+    ]},
+    {"Day 2" = [
+        {"Slides" = "day2/slides.md"},
+        {"AlphaFold Server tutorial" = "day2/alphafold_server_tutorial.md"},
+        {"Data" = "day2/data.md"}
     ]}
 ]
 
