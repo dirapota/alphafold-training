@@ -83,9 +83,7 @@ Go to the Home main menu. Options include:
 - **Download from PDB** — paste a PDB ID
 - **Open Files** — upload from your laptop
 
-<div style="text-align: center;">
-  <img src="../assets/images/p4.png" alt="Mol* Interface" style="width: 70%;">
-</div>
+![Mol* Interface](../assets/images/p4.png){ width="85%" }
 
 ---
 

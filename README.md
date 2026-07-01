@@ -34,6 +34,12 @@ This two-day, hands-on course introduces protein structure prediction with Alpha
   - Complementary tools: LIVIA and PAE Viewer for advanced analysis
   - A look towards alternative structure prediction methods: ESMFold2 and BioEmu
 
+## Content
+
+- Lecture slides (PDF) for every session: [All slides Day 1](https://dirapota.github.io/alphafold-training/day1/slides/), [All slides Day 2](https://dirapota.github.io/alphafold-training/day2/slides/)
+- Practical tutorial with solutions: [ColabFold tutorial](https://dirapota.github.io/alphafold-training/day1/colabfold_tutorial/), [AlphaFold Server + Boltz-2 tutorial](https://dirapota.github.io/alphafold-training/day2/alphafold_server_tutorial/)
+- Input and output data: [Data Day 1](https://dirapota.github.io/alphafold-training/day1/data/), [Data Day 2](https://dirapota.github.io/alphafold-training/day2/data/)
+
 ## Learning outcomes
 
 By the end of this course, participants will be able to:

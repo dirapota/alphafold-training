@@ -29,7 +29,7 @@ nav = [
     {"Home" = "index.md"},
     {"Course schedule" = "course_schedule.md"},
     {"Day 1" = [
-        {"Slides" = "day1/slides.md"},
+        {"All slides" = "day1/slides.md"},
         {"ColabFold tutorial" = [
             {"Tutorial" = "day1/colabfold_tutorial.md"},
             {"Data" = "day1/data.md"}
@@ -37,7 +37,7 @@ nav = [
         {"Mol* tutorial" = "day1/mol_star_tutorial.md"}
     ]},
     {"Day 2" = [
-        {"Slides" = "day2/slides.md"},
+        {"All slides" = "day2/slides.md"},
         {"AlphaFold Server tutorial" = "day2/alphafold_server_tutorial.md"},
         {"Data" = "day2/data.md"}
     ]}

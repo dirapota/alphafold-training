@@ -39,7 +39,7 @@ This two-day, hands-on course introduces protein structure prediction with Alpha
 
 ## Content
 
-- Lecture slides (PDF) for every session: [Slides Day 1](day1/slides.md), [Slides Day 2](day2/slides.md)
+- Lecture slides (PDF) for every session: [All slides Day 1](day1/slides.md), [All slides Day 2](day2/slides.md)
 - Practical tutorial with solutions: [ColabFold tutorial](day1/colabfold_tutorial.md), [AlphaFold Server + Boltz-2 tutorial](day2/alphafold_server_tutorial.md)
 - Input and output data: [Data Day 1](day1/data.md), [Data Day 2](day2/data.md)
 
