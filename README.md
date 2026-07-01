@@ -10,10 +10,6 @@ This two-day, hands-on course introduces protein structure prediction with Alpha
 - Rok Breznikar [![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0009-0002-5364-6879)
 - Janani (Jay) Durairaj [![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-1698-4556)
 
-## Content
-
-- Lecture slides (PDF) for every session
-- Practical tutorial with solutions, input and output data
 
 ## Topics covered
 
@@ -36,8 +32,8 @@ This two-day, hands-on course introduces protein structure prediction with Alpha
 
 ## Content
 
-- Lecture slides (PDF) for every session: [All slides Day 1](https://dirapota.github.io/alphafold-training/day1/slides/), [All slides Day 2](https://dirapota.github.io/alphafold-training/day2/slides/)
-- Practical tutorial with solutions: [ColabFold tutorial](https://dirapota.github.io/alphafold-training/day1/colabfold_tutorial/), [AlphaFold Server + Boltz-2 tutorial](https://dirapota.github.io/alphafold-training/day2/alphafold_server_tutorial/)
+- Lecture slides (PDF) for every session: [Slides Day 1](https://dirapota.github.io/alphafold-training/day1/slides/), [Slides Day 2](https://dirapota.github.io/alphafold-training/day2/slides/)
+- Practical tutorial with solutions: [ColabFold Tutorial](https://dirapota.github.io/alphafold-training/day1/colabfold_tutorial/), [AlphaFold Server + Boltz-2 Tutorial](https://dirapota.github.io/alphafold-training/day2/alphafold_server_tutorial/)
 - Input and output data: [Data Day 1](https://dirapota.github.io/alphafold-training/day1/data/), [Data Day 2](https://dirapota.github.io/alphafold-training/day2/data/)
 
 ## Learning outcomes
