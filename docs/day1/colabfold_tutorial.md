@@ -50,8 +50,8 @@ In this first exercise, you will submit a single protein sequence to ColabFold a
 In this exercise, you will compare the default ColabFold MSA against a custom MSA that you provide yourself. The goal is to understand how sequence depth and sequence diversity can affect structural confidence and model quality.
 
 <div style="display: flex; gap: 1rem; align-items: flex-start;">
-  <img src="../../assets/images/ex2_default_msa.gif" alt="AF2 model with ColabFold default MSA (pLDDT 45.3)" style="width: 50%; height: 300px; object-fit: contain;">
-  <img src="../../assets/images/ex2_custom_msa.gif" alt="AF2 model with custom HHblits MSA (pLDDT 89.2)" style="width: 50%; height: 300px; object-fit: contain;">
+  <img src="../assets/images/ex2_default_msa.gif" alt="AF2 model with ColabFold default MSA (pLDDT 45.3)" style="width: 50%; height: 300px; object-fit: contain;">
+  <img src="../assets/images/ex2_custom_msa.gif" alt="AF2 model with custom HHblits MSA (pLDDT 89.2)" style="width: 50%; height: 300px; object-fit: contain;">
 </div>
 
 *The AF2 model generated with the ColabFold default MSA is shown on the left (pLDDT 45.3), and the model generated with a custom HHblits MSA is shown on the right (pLDDT 89.2).*
@@ -238,6 +238,9 @@ The structure files (7ZH0 and 8ET6) are available in the [Data](data.md) section
     - **Option a — Reducing the MSA depth:** In the **Advanced settings** section, change `max_msa` to `16:32` or `32:64`.
     - **Option b — Completely removing the MSA:** In the **MSA options** section, change `msa_mode` to `single_sequence`.
 4. Compare the structures you get now to the ground truth structures (8SC1 and 8ET6). Structures should be more similar to 8ET6.
+
+!!! warning "Spoiler alert!"
+    In this exercise, we showed that AlphaFold2 can be guided toward alternative conformations, even though it was not originally designed for that purpose. One effective strategy is to reduce the MSA depth and provide a template representing the desired state. OCT3 outward-open template biased OCT1 toward an outward-open-like model, although the prediction remained somewhat intermediate. This demonstrates that homologous templates can help model alternative conformations, and tools such as SWISS-MODEL or Foldseek can be used to find suitable templates.
 
 ---
 
