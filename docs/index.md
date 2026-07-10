@@ -1,3 +1,7 @@
+---
+og_image: assets/images/firstslide.png
+---
+
 # AlphaFold for Protein Structure Prediction
 
 ![](./assets/images/firstslide.png)
