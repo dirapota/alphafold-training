@@ -1,6 +1,7 @@
 # AlphaFold for Protein Structure Prediction
 
-![](../assets/images/firstslide.png)
+![](./assets/images/firstslide.png)
+
 ## Authors
 
 - Diana Rapota [![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0009-0004-0894-9816)
